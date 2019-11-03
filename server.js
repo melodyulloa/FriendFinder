@@ -22,6 +22,6 @@ require("./app/routing/htmlRoutes")(app);
 
 
 // listen (start app with node server.js) ======================================
-app.listen(PORT);
+app.listen(process.env.PORT || PORT);
 console.log("App listening on port " + PORT);
 module.exports = app;
